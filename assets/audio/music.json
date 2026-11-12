@@ -1,0 +1,95 @@
+{
+  "$comment": "Songs for the booth. Put each source file (MP3 or WAV) in assets/audio/source/, add an entry here, then run `pnpm assets:music` and `pnpm assets:routines`. bpm: the song's tempo (approximate is fine; the script refines it ±1.5). startNear: seconds into the song where the excerpt should start. beats: excerpt length in beats (e.g. 80 beats at 110 BPM is about 45 s). See docs/custom-music.md.",
+  "tracks": [
+    {
+      "id": "maltina-theme",
+      "title": "Maltina Theme Song",
+      "artist": "Maltina",
+      "file": "maltina_theme_song.mp3",
+      "bpm": 112.5,
+      "startNear": 0,
+      "beats": 84,
+      "license": {
+        "source": "Maltina theme song, supplied by the client (Maltina) for the Maltina Dance All booth",
+        "license": "Client-supplied brand audio: for use in this booth only; not to be redistributed",
+        "attribution": "Maltina theme song (supplied by Maltina).",
+        "placeholder": false
+      }
+    },
+    {
+      "id": "funkorama",
+      "title": "Funkorama",
+      "artist": "Kevin MacLeod",
+      "file": "Funkorama.mp3",
+      "bpm": 101,
+      "startNear": 10,
+      "beats": 72,
+      "license": {
+        "source": "Kevin MacLeod (incompetech.com), \"Funkorama\"",
+        "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+        "attribution": "\"Funkorama\" by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0.",
+        "placeholder": false
+      }
+    },
+    {
+      "id": "unlock-me",
+      "title": "Unlock Me",
+      "artist": "Kontraa Music",
+      "file": "unlock-me.mp3",
+      "bpm": 110,
+      "startNear": 106,
+      "beats": 80,
+      "license": {
+        "source": "\"Unlock Me\" by Kontraa Music, Pixabay (https://pixabay.com/music/upbeat-unlock-me-amapiano-music-149058/)",
+        "license": "Pixabay Content License (https://pixabay.com/service/license-summary/): free to use, no attribution required",
+        "attribution": "\"Unlock Me\" by Kontraa Music (Pixabay).",
+        "placeholder": false
+      }
+    },
+    {
+      "id": "my-bebe",
+      "title": "My Bebe",
+      "artist": "artbybigvee",
+      "file": "my-bebe.mp3",
+      "bpm": 110,
+      "startNear": 43,
+      "beats": 80,
+      "license": {
+        "source": "\"My Bebe\" by artbybigvee, Pixabay (https://pixabay.com/music/afrobeat-my-bebe-183605/)",
+        "license": "Pixabay Content License (https://pixabay.com/service/license-summary/): free to use, no attribution required",
+        "attribution": "\"My Bebe\" by artbybigvee (Pixabay).",
+        "placeholder": false
+      }
+    },
+    {
+      "id": "the-hills",
+      "title": "The Hills",
+      "artist": "artbybigvee",
+      "file": "the-hills.mp3",
+      "bpm": 104,
+      "startNear": 87,
+      "beats": 76,
+      "license": {
+        "source": "\"The Hills\" by artbybigvee, Pixabay (https://pixabay.com/music/afrobeat-the-hills-153598/)",
+        "license": "Pixabay Content License (https://pixabay.com/service/license-summary/): free to use, no attribution required",
+        "attribution": "\"The Hills\" by artbybigvee (Pixabay).",
+        "placeholder": false
+      }
+    },
+    {
+      "id": "afro-trap-fusion",
+      "title": "Afro Trap Fusion",
+      "artist": "CNA Beats",
+      "file": "afro-trap-fusion.mp3",
+      "bpm": 125,
+      "startNear": 50,
+      "beats": 92,
+      "license": {
+        "source": "\"Afro Trap Fusion\" by CNA Beats, Pixabay (https://pixabay.com/music/beats-afro-trap-fusion-cna-beats-112526/)",
+        "license": "Pixabay Content License (https://pixabay.com/service/license-summary/): free to use, no attribution required",
+        "attribution": "\"Afro Trap Fusion\" by CNA Beats (Pixabay).",
+        "placeholder": false
+      }
+    }
+  ]
+}

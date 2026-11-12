@@ -1,0 +1,53 @@
+{
+  "name": "danceoff-booth-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "description": "DanceOff Booth: offline, Windows-first dance experience for a staffed event booth.",
+  "type": "module",
+  "packageManager": "pnpm@12.5.1",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "setup:assets": "pnpm assets:wasm && pnpm assets:models",
+    "dev": "pnpm --filter @booth/desktop dev",
+    "dev:clean": "node scripts/clean-dev-cache.mjs && pnpm --filter @booth/desktop dev",
+    "typecheck": "pnpm -r --workspace-concurrency=1 typecheck",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "pnpm --filter @booth/desktop test:e2e",
+    "build": "pnpm --filter @booth/desktop package",
+    "make:win": "pnpm --filter @booth/desktop make",
+    "content:validate": "tsx scripts/validate-content.ts",
+    "assets:wasm": "node scripts/sync-mediapipe-wasm.mjs",
+    "assets:models": "node scripts/fetch-models.mjs",
+    "assets:dev-audio": "node scripts/generate-dev-audio.mjs",
+    "assets:dev-content": "tsx scripts/generate-dev-content.ts",
+    "check": "pnpm typecheck && pnpm lint && pnpm test && pnpm content:validate",
+    "assets:music": "node scripts/prepare-music.mjs",
+    "assets:routines": "tsx scripts/build-routines.ts",
+    "assets:songs": "pnpm assets:music && pnpm assets:routines && pnpm assets:dev-content",
+    "assets:portraits": "electron scripts/portraits/main.cjs",
+    "assets:prune": "node scripts/prune-assets.mjs"
+  },
+  "devDependencies": {
+    "@booth/choreography": "workspace:*",
+    "@booth/content": "workspace:*",
+    "@booth/contracts": "workspace:*",
+    "@booth/scoring": "workspace:*",
+    "@eslint/js": "10.0.1",
+    "@types/node": "24.19.2",
+    "eslint": "10.14.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.14.0",
+    "mpg123-decoder": "1.0.3",
+    "prettier": "3.9.10",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.1",
+    "vitest": "5.0.5"
+  }
+}

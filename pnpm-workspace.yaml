@@ -1,0 +1,16 @@
+packages:
+  - apps/*
+  - packages/*
+
+# Electron Forge packaging expects a flat node_modules tree; pnpm's symlinked
+# layout is not reliably supported by it, so the workspace uses a hoisted linker.
+nodeLinker: hoisted
+
+# Only these dependencies may run install scripts (pnpm blocks all others).
+allowBuilds:
+  electron: true
+  electron-winstaller: true
+  esbuild: true
+
+minimumReleaseAgeExclude:
+  - '@vitejs/plugin-react@6.2.1'

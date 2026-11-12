@@ -1,0 +1,111 @@
+/*
+ * Design tokens. PROVISIONAL Maltina-inspired palette (not official brand
+ * specifications). Every colour used by the app lives here; event profiles
+ * override them at runtime via applyBranding().
+ *
+ * Fonts are registered at runtime from the event profile (loadBrandFonts) so
+ * they can change per event and never require a network request.
+ */
+:root {
+  --brand-orange: #f36b21;
+  --brand-orange-dark: #b8400b;
+  --brand-gold: #f7b928;
+  --brand-gold-light: #ffe2a0;
+
+  --surface-page: #fff8ef;
+  --surface-card: #ffffff;
+  --surface-warm: #fff0dc;
+
+  --text-primary: #352015;
+  --text-secondary: #705447;
+  --border-subtle: #e9d5c4;
+
+  --stage-background: #23150f;
+  --stage-panel: #38251c;
+  --text-on-dark: #fff8ef;
+
+  --status-success: #246b43;
+  --status-warning: #8a5700;
+  --status-error: #b42318;
+  --focus-ring: #1d4ed8;
+
+  /* Player identity (always paired with a label/shape, never colour alone). */
+  --player-1: var(--brand-orange);
+  --player-2: var(--brand-gold);
+
+  --font-display: 'Barlow Condensed', 'Bahnschrift', 'Segoe UI', sans-serif;
+  --font-body: 'Manrope', 'Segoe UI', sans-serif;
+
+  /* 8 px spacing system */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-8: 96px;
+  --safe-margin: clamp(24px, 4vw, 80px);
+
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 24px;
+  --shadow: 0 6px 18px rgba(53, 32, 21, 0.16);
+
+  --dur-fast: 120ms;
+  --dur: 180ms;
+  --dur-screen: 260ms;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Type scale at the 1920x1080 reference; scales with viewport height. */
+  --fs-hero: clamp(56px, 9.5vh, 112px);
+  --fs-title: clamp(36px, 5.4vh, 64px);
+  --fs-heading: clamp(24px, 3.2vh, 36px);
+  --fs-instruction: clamp(20px, 2.6vh, 30px);
+  --fs-button: clamp(20px, 2.4vh, 28px);
+  --fs-secondary: clamp(16px, 1.9vh, 22px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 4px solid var(--focus-ring);
+  outline-offset: 4px;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

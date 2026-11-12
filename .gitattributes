@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.wav binary
+*.task binary
+*.wasm binary
+*.glb binary
+*.png binary

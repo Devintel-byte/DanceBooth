@@ -1,0 +1,19 @@
+node_modules/
+.vite/
+out/
+dist/
+coverage/
+*.log
+.DS_Store
+Thumbs.db
+test-results/
+playwright-report/
+# Runtime data written by the app in dev mode
+.booth-data/
+# Derived/fetched runtime binaries (regenerate with pnpm assets:wasm / assets:models;
+# models are hash-locked in assets/tracking-models/models.lock.json)
+assets/tracking-models/wasm/
+assets/tracking-models/*.task
+apps/desktop/test-results/
+# Original licensed MP3s (re-download from incompetech; see assets/audio/LICENSES.md)
+assets/audio/source/

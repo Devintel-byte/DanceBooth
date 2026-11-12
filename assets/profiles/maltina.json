@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "maltina",
+  "productName": "Maltina Dance All",
+  "productNameAccent": "Maltina",
+  "eventName": "Maltina",
+  "tagline": "Step in. Pick your dancer. Make your move.",
+  "logo": "branding/maltina.png",
+  "colors": {
+    "brandOrange": "#FF6600",
+    "brandOrangeDark": "#B34700",
+    "brandGold": "#D4AF37",
+    "brandGoldLight": "#F3E2A6",
+    "surfacePage": "#FFFFFF",
+    "surfaceCard": "#FFFFFF",
+    "surfaceWarm": "#FFF1E5",
+    "textPrimary": "#4A2306",
+    "textSecondary": "#6E4A2E",
+    "borderSubtle": "#EAD9C8",
+    "stageBackground": "#2A1403",
+    "stagePanel": "#4A2306",
+    "textOnDark": "#FFFFFF"
+  },
+  "fonts": {
+    "display": {
+      "family": "Plus Jakarta Sans",
+      "file": "branding/fonts/PlusJakartaSans-Variable-latin.woff2"
+    },
+    "body": {
+      "family": "Plus Jakarta Sans",
+      "file": "branding/fonts/PlusJakartaSans-Variable-latin.woff2"
+    }
+  },
+  "stageTheme": "dance-studio",
+  "enabledRoutines": [
+    "maltina-theme",
+    "unlock-me",
+    "my-bebe",
+    "the-hills",
+    "afro-trap-fusion",
+    "funkorama"
+  ],
+  "enabledCharacters": [
+    "michelle",
+    "elizabeth",
+    "david",
+    "lewis",
+    "remy"
+  ],
+  "defaultDifficulty": "easy",
+  "modes": [
+    "single",
+    "duo"
+  ],
+  "session": {
+    "attractAfterIdleSec": 45,
+    "selectionTimeoutSec": 30,
+    "calibrationTimeoutSec": 180,
+    "calibrationHelpSec": 15,
+    "calibrationAwaySec": 25,
+    "tutorialSec": 6,
+    "countdownSec": 3,
+    "resultsDisplaySec": 15,
+    "trackingLostGraceSec": 1.5,
+    "trackingLostPauseSec": 5,
+    "pausedAbortSec": 30
+  },
+  "results": {
+    "tiers": [
+      {
+        "minScore": 75,
+        "title": "Dance-floor legend",
+        "message": "That was something special."
+      },
+      {
+        "minScore": 50,
+        "title": "Smooth mover",
+        "message": "You owned that groove."
+      },
+      {
+        "minScore": 25,
+        "title": "Rising star",
+        "message": "You found the beat!"
+      },
+      {
+        "minScore": 0,
+        "title": "Fresh feet",
+        "message": "Thanks for dancing with us!"
+      }
+    ]
+  }
+}

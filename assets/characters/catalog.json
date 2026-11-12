@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "characters": [
+    {
+      "id": "michelle",
+      "displayName": "Michelle",
+      "kind": "glb",
+      "file": "characters/Michelle.fbx",
+      "thumbnail": "characters/thumbs/michelle.png",
+      "placeholder": false,
+      "license": {
+        "source": "Michelle (Mixamo, Adobe), downloaded with the client's Adobe Mixamo account",
+        "license": "Mixamo terms of use: royalty-free in projects; raw files must not be redistributed"
+      },
+      "rig": {
+        "scale": 0.0105,
+        "yawDeg": 0,
+        "boneMap": {
+          "leftUpperArm": [
+            "LeftArm",
+            "LeftForeArm"
+          ],
+          "leftForearm": [
+            "LeftForeArm",
+            "LeftHand"
+          ],
+          "rightUpperArm": [
+            "RightArm",
+            "RightForeArm"
+          ],
+          "rightForearm": [
+            "RightForeArm",
+            "RightHand"
+          ],
+          "leftThigh": [
+            "LeftUpLeg",
+            "LeftLeg"
+          ],
+          "leftShin": [
+            "LeftLeg",
+            "LeftFoot"
+          ],
+          "rightThigh": [
+            "RightUpLeg",
+            "RightLeg"
+          ],
+          "rightShin": [
+            "RightLeg",
+            "RightFoot"
+          ],
+          "torso": [
+            "Hips",
+            "Neck"
+          ]
+        },
+        "materialSlots": {},
+        "clips": {
+          "idle": "happy-idle",
+          "celebrate": "cheering"
+        },
+        "clipFiles": [
+          "animations/mixamo/happy-idle.fbx",
+          "animations/mixamo/cheering.fbx"
+        ]
+      },
+      "palettes": [
+        {
+          "id": "original",
+          "name": "Original outfit",
+          "primary": "#f36b21",
+          "secondary": "#fff0dc",
+          "accent": "#352015",
+          "skin": "#ffe2a0"
+        }
+      ]
+    },
+    {
+      "id": "remy",
+      "displayName": "Remy",
+      "kind": "glb",
+      "file": "characters/Remy.fbx",
+      "thumbnail": "characters/thumbs/remy.png",
+      "placeholder": false,
+      "license": {
+        "source": "Remy (Mixamo, Adobe), downloaded with the client's Adobe Mixamo account",
+        "license": "Mixamo terms of use: royalty-free in projects; raw files must not be redistributed"
+      },
+      "rig": {
+        "scale": 0.00463,
+        "yawDeg": 0,
+        "boneMap": {
+          "leftUpperArm": [
+            "LeftArm",
+            "LeftForeArm"
+          ],
+          "leftForearm": [
+            "LeftForeArm",
+            "LeftHand"
+          ],
+          "rightUpperArm": [
+            "RightArm",
+            "RightForeArm"
+          ],
+          "rightForearm": [
+            "RightForeArm",
+            "RightHand"
+          ],
+          "leftThigh": [
+            "LeftUpLeg",
+            "LeftLeg"
+          ],
+          "leftShin": [
+            "LeftLeg",
+            "LeftFoot"
+          ],
+          "rightThigh": [
+            "RightUpLeg",
+            "RightLeg"
+          ],
+          "rightShin": [
+            "RightLeg",
+            "RightFoot"
+          ],
+          "torso": [
+            "Hips",
+            "Neck"
+          ]
+        },
+        "materialSlots": {},
+        "clips": {
+          "idle": "happy-idle",
+          "celebrate": "cheering"
+        },
+        "clipFiles": [
+          "animations/mixamo/happy-idle.fbx",
+          "animations/mixamo/cheering.fbx"
+        ]
+      },
+      "palettes": [
+        {
+          "id": "original",
+          "name": "Original outfit",
+          "primary": "#f36b21",
+          "secondary": "#fff0dc",
+          "accent": "#352015",
+          "skin": "#ffe2a0"
+        }
+      ]
+    },
+    {
+      "id": "elizabeth",
+      "displayName": "Elizabeth",
+      "kind": "glb",
+      "file": "characters/Elizabeth.fbx",
+      "placeholder": false,
+      "optional": true,
+      "license": {
+        "source": "Elizabeth (Mixamo, Adobe), downloaded with the client's Adobe Mixamo account",
+        "license": "Mixamo terms of use: royalty-free in projects; raw files must not be redistributed"
+      },
+      "rig": {
+        "scale": 1,
+        "heightM": 1.72,
+        "yawDeg": 0,
+        "boneMap": {
+          "leftUpperArm": [
+            "LeftArm",
+            "LeftForeArm"
+          ],
+          "leftForearm": [
+            "LeftForeArm",
+            "LeftHand"
+          ],
+          "rightUpperArm": [
+            "RightArm",
+            "RightForeArm"
+          ],
+          "rightForearm": [
+            "RightForeArm",
+            "RightHand"
+          ],
+          "leftThigh": [
+            "LeftUpLeg",
+            "LeftLeg"
+          ],
+          "leftShin": [
+            "LeftLeg",
+            "LeftFoot"
+          ],
+          "rightThigh": [
+            "RightUpLeg",
+            "RightLeg"
+          ],
+          "rightShin": [
+            "RightLeg",
+            "RightFoot"
+          ],
+          "torso": [
+            "Hips",
+            "Neck"
+          ]
+        },
+        "materialSlots": {},
+        "clips": {
+          "idle": "happy-idle",
+          "celebrate": "cheering"
+        },
+        "clipFiles": [
+          "animations/mixamo/happy-idle.fbx",
+          "animations/mixamo/cheering.fbx"
+        ]
+      },
+      "palettes": [
+        {
+          "id": "original",
+          "name": "Original outfit",
+          "primary": "#3fb68b",
+          "secondary": "#f2f0ea",
+          "accent": "#2a3f66",
+          "skin": "#7a4a2e"
+        }
+      ]
+    },
+    {
+      "id": "david",
+      "displayName": "David",
+      "kind": "glb",
+      "file": "characters/David.fbx",
+      "placeholder": false,
+      "optional": true,
+      "license": {
+        "source": "David (Mixamo, Adobe), downloaded with the client's Adobe Mixamo account",
+        "license": "Mixamo terms of use: royalty-free in projects; raw files must not be redistributed"
+      },
+      "rig": {
+        "scale": 1,
+        "heightM": 1.72,
+        "yawDeg": 0,
+        "boneMap": {
+          "leftUpperArm": [
+            "LeftArm",
+            "LeftForeArm"
+          ],
+          "leftForearm": [
+            "LeftForeArm",
+            "LeftHand"
+          ],
+          "rightUpperArm": [
+            "RightArm",
+            "RightForeArm"
+          ],
+          "rightForearm": [
+            "RightForeArm",
+            "RightHand"
+          ],
+          "leftThigh": [
+            "LeftUpLeg",
+            "LeftLeg"
+          ],
+          "leftShin": [
+            "LeftLeg",
+            "LeftFoot"
+          ],
+          "rightThigh": [
+            "RightUpLeg",
+            "RightLeg"
+          ],
+          "rightShin": [
+            "RightLeg",
+            "RightFoot"
+          ],
+          "torso": [
+            "Hips",
+            "Neck"
+          ]
+        },
+        "materialSlots": {},
+        "clips": {
+          "idle": "happy-idle",
+          "celebrate": "cheering"
+        },
+        "clipFiles": [
+          "animations/mixamo/happy-idle.fbx",
+          "animations/mixamo/cheering.fbx"
+        ]
+      },
+      "palettes": [
+        {
+          "id": "original",
+          "name": "Original outfit",
+          "primary": "#2b2b2b",
+          "secondary": "#f36b21",
+          "accent": "#d4af37",
+          "skin": "#7a4a2e"
+        }
+      ]
+    },
+    {
+      "id": "lewis",
+      "displayName": "Lewis",
+      "kind": "glb",
+      "file": "characters/Lewis.fbx",
+      "placeholder": false,
+      "optional": true,
+      "license": {
+        "source": "Lewis (Mixamo, Adobe), downloaded with the client's Adobe Mixamo account",
+        "license": "Mixamo terms of use: royalty-free in projects; raw files must not be redistributed"
+      },
+      "rig": {
+        "scale": 1,
+        "heightM": 1.72,
+        "yawDeg": 0,
+        "boneMap": {
+          "leftUpperArm": [
+            "LeftArm",
+            "LeftForeArm"
+          ],
+          "leftForearm": [
+            "LeftForeArm",
+            "LeftHand"
+          ],
+          "rightUpperArm": [
+            "RightArm",
+            "RightForeArm"
+          ],
+          "rightForearm": [
+            "RightForeArm",
+            "RightHand"
+          ],
+          "leftThigh": [
+            "LeftUpLeg",
+            "LeftLeg"
+          ],
+          "leftShin": [
+            "LeftLeg",
+            "LeftFoot"
+          ],
+          "rightThigh": [
+            "RightUpLeg",
+            "RightLeg"
+          ],
+          "rightShin": [
+            "RightLeg",
+            "RightFoot"
+          ],
+          "torso": [
+            "Hips",
+            "Neck"
+          ]
+        },
+        "materialSlots": {},
+        "clips": {
+          "idle": "happy-idle",
+          "celebrate": "cheering"
+        },
+        "clipFiles": [
+          "animations/mixamo/happy-idle.fbx",
+          "animations/mixamo/cheering.fbx"
+        ]
+      },
+      "palettes": [
+        {
+          "id": "original",
+          "name": "Original outfit",
+          "primary": "#8fb3b8",
+          "secondary": "#3b3a33",
+          "accent": "#f36b21",
+          "skin": "#7a4a2e"
+        }
+      ]
+    }
+  ]
+}

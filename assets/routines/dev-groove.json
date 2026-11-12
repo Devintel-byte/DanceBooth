@@ -1,0 +1,737 @@
+{
+  "schemaVersion": 1,
+  "id": "dev-groove",
+  "contentVersion": "0.1.0",
+  "title": "Dev Groove",
+  "subtitle": "DEVELOPMENT ROUTINE - placeholder content",
+  "audio": {
+    "file": "audio/dev-groove-120bpm.wav",
+    "offsetMs": 0
+  },
+  "animation": {
+    "kind": "procedural-keyframes"
+  },
+  "durationSec": 32.5,
+  "bpm": 120,
+  "firstBeatSec": 0,
+  "sections": [
+    {
+      "name": "Count-in",
+      "startSec": 0
+    },
+    {
+      "name": "Verse",
+      "startSec": 2
+    },
+    {
+      "name": "Chorus",
+      "startSec": 18
+    }
+  ],
+  "difficulty": "easy",
+  "mirroring": "mirror",
+  "requiredGroups": [
+    "arms",
+    "torso"
+  ],
+  "moves": [
+    {
+      "timeSec": 2,
+      "label": "Arms Up",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          0.35,
+          1
+        ],
+        "leftForearm": [
+          0.15,
+          1
+        ],
+        "rightUpperArm": [
+          -0.35,
+          1
+        ],
+        "rightForearm": [
+          -0.15,
+          1
+        ]
+      }
+    },
+    {
+      "timeSec": 3,
+      "label": "T Pose",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          1,
+          0
+        ],
+        "leftForearm": [
+          1,
+          0
+        ],
+        "rightUpperArm": [
+          -1,
+          0
+        ],
+        "rightForearm": [
+          -1,
+          0
+        ]
+      }
+    },
+    {
+      "timeSec": 4,
+      "label": "Point Left",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          1,
+          0.45
+        ],
+        "leftForearm": [
+          1,
+          0.6
+        ],
+        "rightUpperArm": [
+          -0.2,
+          -1
+        ],
+        "rightForearm": [
+          -0.1,
+          -1
+        ]
+      }
+    },
+    {
+      "timeSec": 5,
+      "label": "Point Right",
+      "judged": true,
+      "pose": {
+        "rightUpperArm": [
+          -1,
+          0.45
+        ],
+        "rightForearm": [
+          -1,
+          0.6
+        ],
+        "leftUpperArm": [
+          0.2,
+          -1
+        ],
+        "leftForearm": [
+          0.1,
+          -1
+        ]
+      }
+    },
+    {
+      "timeSec": 6,
+      "label": "Flex",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          1,
+          0
+        ],
+        "leftForearm": [
+          0,
+          1
+        ],
+        "rightUpperArm": [
+          -1,
+          0
+        ],
+        "rightForearm": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "timeSec": 7,
+      "label": "Hands On Hips",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          0.6,
+          -0.8
+        ],
+        "leftForearm": [
+          -0.8,
+          -0.35
+        ],
+        "rightUpperArm": [
+          -0.6,
+          -0.8
+        ],
+        "rightForearm": [
+          0.8,
+          -0.35
+        ]
+      }
+    },
+    {
+      "timeSec": 8,
+      "label": "Disco Left",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          0.55,
+          0.85
+        ],
+        "leftForearm": [
+          0.45,
+          0.9
+        ],
+        "rightUpperArm": [
+          0.25,
+          -1
+        ],
+        "rightForearm": [
+          0.35,
+          -1
+        ]
+      }
+    },
+    {
+      "timeSec": 9,
+      "label": "Disco Right",
+      "judged": true,
+      "pose": {
+        "rightUpperArm": [
+          -0.55,
+          0.85
+        ],
+        "rightForearm": [
+          -0.45,
+          0.9
+        ],
+        "leftUpperArm": [
+          -0.25,
+          -1
+        ],
+        "leftForearm": [
+          -0.35,
+          -1
+        ]
+      }
+    },
+    {
+      "timeSec": 10,
+      "label": "Lean Left",
+      "judged": true,
+      "pose": {
+        "torso": [
+          0.25,
+          1
+        ],
+        "leftUpperArm": [
+          1,
+          0.2
+        ],
+        "leftForearm": [
+          1,
+          0.3
+        ],
+        "rightUpperArm": [
+          -0.3,
+          1
+        ],
+        "rightForearm": [
+          -0.1,
+          1
+        ]
+      }
+    },
+    {
+      "timeSec": 11,
+      "label": "Lean Right",
+      "judged": true,
+      "pose": {
+        "torso": [
+          -0.25,
+          1
+        ],
+        "rightUpperArm": [
+          -1,
+          0.2
+        ],
+        "rightForearm": [
+          -1,
+          0.3
+        ],
+        "leftUpperArm": [
+          0.3,
+          1
+        ],
+        "leftForearm": [
+          0.1,
+          1
+        ]
+      }
+    },
+    {
+      "timeSec": 12,
+      "label": "Arms Up",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          0.35,
+          1
+        ],
+        "leftForearm": [
+          0.15,
+          1
+        ],
+        "rightUpperArm": [
+          -0.35,
+          1
+        ],
+        "rightForearm": [
+          -0.15,
+          1
+        ]
+      }
+    },
+    {
+      "timeSec": 13,
+      "label": "Flex",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          1,
+          0
+        ],
+        "leftForearm": [
+          0,
+          1
+        ],
+        "rightUpperArm": [
+          -1,
+          0
+        ],
+        "rightForearm": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "timeSec": 14,
+      "label": "Point Left",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          1,
+          0.45
+        ],
+        "leftForearm": [
+          1,
+          0.6
+        ],
+        "rightUpperArm": [
+          -0.2,
+          -1
+        ],
+        "rightForearm": [
+          -0.1,
+          -1
+        ]
+      }
+    },
+    {
+      "timeSec": 15,
+      "label": "Point Right",
+      "judged": true,
+      "pose": {
+        "rightUpperArm": [
+          -1,
+          0.45
+        ],
+        "rightForearm": [
+          -1,
+          0.6
+        ],
+        "leftUpperArm": [
+          0.2,
+          -1
+        ],
+        "leftForearm": [
+          0.1,
+          -1
+        ]
+      }
+    },
+    {
+      "timeSec": 16,
+      "label": "T Pose",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          1,
+          0
+        ],
+        "leftForearm": [
+          1,
+          0
+        ],
+        "rightUpperArm": [
+          -1,
+          0
+        ],
+        "rightForearm": [
+          -1,
+          0
+        ]
+      }
+    },
+    {
+      "timeSec": 17,
+      "label": "Hands On Hips",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          0.6,
+          -0.8
+        ],
+        "leftForearm": [
+          -0.8,
+          -0.35
+        ],
+        "rightUpperArm": [
+          -0.6,
+          -0.8
+        ],
+        "rightForearm": [
+          0.8,
+          -0.35
+        ]
+      }
+    },
+    {
+      "timeSec": 18,
+      "label": "Disco Left",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          0.55,
+          0.85
+        ],
+        "leftForearm": [
+          0.45,
+          0.9
+        ],
+        "rightUpperArm": [
+          0.25,
+          -1
+        ],
+        "rightForearm": [
+          0.35,
+          -1
+        ]
+      }
+    },
+    {
+      "timeSec": 19,
+      "label": "Disco Right",
+      "judged": true,
+      "pose": {
+        "rightUpperArm": [
+          -0.55,
+          0.85
+        ],
+        "rightForearm": [
+          -0.45,
+          0.9
+        ],
+        "leftUpperArm": [
+          -0.25,
+          -1
+        ],
+        "leftForearm": [
+          -0.35,
+          -1
+        ]
+      }
+    },
+    {
+      "timeSec": 20,
+      "label": "Disco Left",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          0.55,
+          0.85
+        ],
+        "leftForearm": [
+          0.45,
+          0.9
+        ],
+        "rightUpperArm": [
+          0.25,
+          -1
+        ],
+        "rightForearm": [
+          0.35,
+          -1
+        ]
+      }
+    },
+    {
+      "timeSec": 21,
+      "label": "Disco Right",
+      "judged": true,
+      "pose": {
+        "rightUpperArm": [
+          -0.55,
+          0.85
+        ],
+        "rightForearm": [
+          -0.45,
+          0.9
+        ],
+        "leftUpperArm": [
+          -0.25,
+          -1
+        ],
+        "leftForearm": [
+          -0.35,
+          -1
+        ]
+      }
+    },
+    {
+      "timeSec": 22,
+      "label": "Lean Left",
+      "judged": true,
+      "pose": {
+        "torso": [
+          0.25,
+          1
+        ],
+        "leftUpperArm": [
+          1,
+          0.2
+        ],
+        "leftForearm": [
+          1,
+          0.3
+        ],
+        "rightUpperArm": [
+          -0.3,
+          1
+        ],
+        "rightForearm": [
+          -0.1,
+          1
+        ]
+      }
+    },
+    {
+      "timeSec": 23,
+      "label": "Lean Right",
+      "judged": true,
+      "pose": {
+        "torso": [
+          -0.25,
+          1
+        ],
+        "rightUpperArm": [
+          -1,
+          0.2
+        ],
+        "rightForearm": [
+          -1,
+          0.3
+        ],
+        "leftUpperArm": [
+          0.3,
+          1
+        ],
+        "leftForearm": [
+          0.1,
+          1
+        ]
+      }
+    },
+    {
+      "timeSec": 24,
+      "label": "Flex",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          1,
+          0
+        ],
+        "leftForearm": [
+          0,
+          1
+        ],
+        "rightUpperArm": [
+          -1,
+          0
+        ],
+        "rightForearm": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "timeSec": 25,
+      "label": "Arms Up",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          0.35,
+          1
+        ],
+        "leftForearm": [
+          0.15,
+          1
+        ],
+        "rightUpperArm": [
+          -0.35,
+          1
+        ],
+        "rightForearm": [
+          -0.15,
+          1
+        ]
+      }
+    },
+    {
+      "timeSec": 26,
+      "label": "Point Right",
+      "judged": true,
+      "pose": {
+        "rightUpperArm": [
+          -1,
+          0.45
+        ],
+        "rightForearm": [
+          -1,
+          0.6
+        ],
+        "leftUpperArm": [
+          0.2,
+          -1
+        ],
+        "leftForearm": [
+          0.1,
+          -1
+        ]
+      }
+    },
+    {
+      "timeSec": 27,
+      "label": "Point Left",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          1,
+          0.45
+        ],
+        "leftForearm": [
+          1,
+          0.6
+        ],
+        "rightUpperArm": [
+          -0.2,
+          -1
+        ],
+        "rightForearm": [
+          -0.1,
+          -1
+        ]
+      }
+    },
+    {
+      "timeSec": 28,
+      "label": "Hands On Hips",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          0.6,
+          -0.8
+        ],
+        "leftForearm": [
+          -0.8,
+          -0.35
+        ],
+        "rightUpperArm": [
+          -0.6,
+          -0.8
+        ],
+        "rightForearm": [
+          0.8,
+          -0.35
+        ]
+      }
+    },
+    {
+      "timeSec": 29,
+      "label": "T Pose",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          1,
+          0
+        ],
+        "leftForearm": [
+          1,
+          0
+        ],
+        "rightUpperArm": [
+          -1,
+          0
+        ],
+        "rightForearm": [
+          -1,
+          0
+        ]
+      }
+    },
+    {
+      "timeSec": 30,
+      "label": "Arms Up",
+      "judged": true,
+      "pose": {
+        "leftUpperArm": [
+          0.35,
+          1
+        ],
+        "leftForearm": [
+          0.15,
+          1
+        ],
+        "rightUpperArm": [
+          -0.35,
+          1
+        ],
+        "rightForearm": [
+          -0.15,
+          1
+        ]
+      }
+    }
+  ],
+  "license": {
+    "audio": {
+      "source": "Synthesised by scripts/generate-dev-audio.mjs",
+      "license": "Project-owned development asset",
+      "placeholder": true
+    },
+    "choreography": {
+      "source": "Generated by scripts/generate-dev-content.ts",
+      "license": "Project-owned development asset",
+      "placeholder": true
+    }
+  },
+  "integrity": {
+    "audio/dev-groove-120bpm.wav": "21fe6fb521c1b59452a9c5f9f6661ec4efda09c4e634a9ee08c503eb5665fe2d"
+  }
+}

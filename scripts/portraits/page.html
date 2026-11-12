@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script>
+      const root = new URL(location.href).searchParams.get('root');
+      const map = { imports: { three: root + 'node_modules/three/build/three.module.js', 'three/addons/': root + 'node_modules/three/examples/jsm/' } };
+      const s = document.createElement('script');
+      s.type = 'importmap';
+      s.textContent = JSON.stringify(map);
+      document.currentScript.after(s);
+    </script>
+  </head>
+  <body style="margin: 0; background: transparent">
+    <script type="module">
+      import * as THREE from 'three';
+      import { FBXLoader } from 'three/addons/loaders/FBXLoader.js';
+      import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+      const root = new URL(location.href).searchParams.get('root');
+      const SIZE = 512;
+      const OUT = 320;
+      const r = new THREE.WebGLRenderer({ antialias: true, alpha: true, preserveDrawingBuffer: true });
+      r.setSize(SIZE, SIZE);
+      r.setClearColor(0x000000, 0);
+      r.outputColorSpace = THREE.SRGBColorSpace;
+      const sleep = (ms) => new Promise((s) => setTimeout(s, ms));
+      const load = async (rel) => {
+        const url = root + 'assets/' + rel;
+        if (/\.fbx$/i.test(rel)) return new Promise((res, rej) => new FBXLoader().load(url, (g) => res({ scene: g, animations: g.animations }), undefined, rej));
+        return new Promise((res, rej) => new GLTFLoader().load(url, (g) => res({ scene: g.scene, animations: g.animations }), undefined, rej));
+      };
+      const stem = (f) => f.split('/').pop().replace(/\.[^.]+$/, '');
+
+      window.renderPortrait = async (c) => {
+        const scene = new THREE.Scene();
+        scene.add(new THREE.HemisphereLight(0xfff4e6, 0x6b3a22, 2.2));
+        const key = new THREE.DirectionalLight(0xffffff, 2.2);
+        key.position.set(-2, 3, 4);
+        scene.add(key);
+        const rim = new THREE.DirectionalLight(0xffc27a, 1.4);
+        rim.position.set(3, 2, -3);
+        scene.add(rim);
+        const m = await load(c.file);
+        scene.add(m.scene);
+        // Wait for embedded textures to decode.
+        const maps = [];
+        m.scene.traverse((o) => {
+          if (!o.isMesh) return;
+          for (const mt of Array.isArray(o.material) ? o.material : [o.material]) {
+            if (mt.map) {
+              mt.map.colorSpace = THREE.SRGBColorSpace;
+              maps.push(mt.map);
+            }
+          }
+        });
+        for (let i = 0; i < 100 && maps.some((t) => !t.image || t.image.complete === false || t.image.width === 0); i++) await sleep(100);
+        await sleep(300);
+        maps.forEach((t) => (t.needsUpdate = true));
+
+        // Idle clip: from the model itself or from the character's clip files (named after the file).
+        let idle = m.animations.find((a) => a.name === c.idle);
+        for (const f of c.clipFiles) {
+          if (idle) break;
+          if (stem(f) === c.idle) idle = (await load(f)).animations.find((a) => a.duration > 0);
+        }
+        const find = (n) => {
+          let hit = null;
+          m.scene.traverse((o) => {
+            if (!hit && o.name.replace(/^mixamorig\d*[:_]?/i, '') === n) hit = o;
+          });
+          return hit;
+        };
+        const hips = find('Hips');
+        if (idle && hips) {
+          const clip = idle.clone();
+          // Clips recorded on "mixamorig:" bones also drive "mixamorig4:"-style characters.
+          for (const tr of clip.tracks) {
+            const dot = tr.name.lastIndexOf('.');
+            const bone = find(tr.name.slice(0, dot).replace(/^mixamorig\d*[:_]?/i, ''));
+            if (bone) tr.name = bone.name + tr.name.slice(dot);
+          }
+          const t = clip.tracks.find((x) => /Hips\.position$/.test(x.name));
+          if (t) {
+            const ys = [];
+            for (let i = 1; i < t.values.length; i += 3) ys.push(t.values[i]);
+            ys.sort((a, b) => a - b);
+            const ratio = hips.position.y / ys[ys.length >> 1];
+            t.values = Float32Array.from(t.values, (v) => v * ratio);
+          }
+          const mx = new THREE.AnimationMixer(m.scene);
+          mx.clipAction(clip).play();
+          mx.setTime(Math.min(0.6, clip.duration / 2));
+        }
+        m.scene.updateMatrixWorld(true);
+        const w = (o) => new THREE.Vector3().setFromMatrixPosition(o.matrixWorld);
+        const headTop = find('HeadTop_End') ?? find('Head');
+        let top, hp;
+        if (headTop && hips) {
+          top = w(headTop);
+          hp = w(hips);
+        } else {
+          const box = new THREE.Box3().setFromObject(m.scene);
+          top = new THREE.Vector3((box.min.x + box.max.x) / 2, box.max.y, (box.min.z + box.max.z) / 2);
+          hp = new THREE.Vector3(top.x, box.min.y + (box.max.y - box.min.y) * 0.5, top.z);
+        }
+        const h = top.y - hp.y;
+        const yTop = top.y + h * 0.12;
+        const yBot = hp.y - h * 0.15;
+        const cy = (yTop + yBot) / 2;
+        const span = yTop - yBot;
+        const cam = new THREE.PerspectiveCamera(22, 1, 0.01, 1e6);
+        const dist = span / 2 / Math.tan(THREE.MathUtils.degToRad(11));
+        cam.position.set(top.x + dist * 0.18, cy + span * 0.08, top.z + dist);
+        cam.lookAt(top.x, cy, top.z);
+        r.render(scene, cam);
+        const c2 = document.createElement('canvas');
+        c2.width = c2.height = OUT;
+        const g = c2.getContext('2d');
+        g.imageSmoothingQuality = 'high';
+        g.drawImage(r.domElement, 0, 0, OUT, OUT);
+        scene.traverse((o) => {
+          o.geometry?.dispose();
+          for (const mt of [].concat(o.material ?? [])) mt.dispose();
+        });
+        return c2.toDataURL('image/png');
+      };
+      window.ready = true;
+    </script>
+  </body>
+</html>

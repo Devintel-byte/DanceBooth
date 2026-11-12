@@ -1,0 +1,73 @@
+{
+  "$comment": "Choreography plan for scripts/build-routines.ts. The builder measures each pool clip's own beat, then makes `variations` random dances per song from the pool: each phrase starts on a song beat, on one of the clip's steps, played at the speed that puts the clip's steps on the song's beats. The booth plays a different dance each session. Keep the pool to simple moves anyone can copy (no hip-hop isolations, fast footwork, squats or turning away from the camera). Pool entries are a clip name or {clip, weight}; a higher weight makes a clip come up more often. Clip names from FBX files are the file name without extension; list every file used in clipFiles. If a clip's beat is measured wrong, set it in beatOverrides: {\"clip\": {\"beatSec\": 0.5, \"downbeatSec\": 0.1, \"loops\": false}} (loops = the clip is a seamless loop of whole beats). After changing clips, `pnpm assets:prune` removes animation files no longer listed.",
+  "character": "michelle",
+  "clipFiles": [
+    "animations/mixamo/arm-wave.fbx",
+    "animations/mixamo/cabbage-patch.fbx",
+    "animations/mixamo/chicken-dance.fbx",
+    "animations/mixamo/happy-idle.fbx",
+    "animations/mixamo/just-listening.fbx",
+    "animations/mixamo/macarena.fbx",
+    "animations/mixamo/raise-the-roof.fbx",
+    "animations/mixamo/rumba.fbx",
+    "animations/mixamo/shimmy.fbx",
+    "animations/mixamo/silly-twist.fbx",
+    "animations/mixamo/step-hip-hop.fbx",
+    "animations/mixamo/twist.fbx",
+    "animations/mixamo/ymca.fbx"
+  ],
+  "countInBeats": 4,
+  "judgeEveryBeats": 2,
+  "variations": 16,
+  "phraseBeats": [
+    8,
+    8,
+    16
+  ],
+  "pool": [
+    "just-listening",
+    {
+      "clip": "twist",
+      "weight": 2
+    },
+    {
+      "clip": "silly-twist",
+      "weight": 2
+    },
+    "cabbage-patch",
+    {
+      "clip": "raise-the-roof",
+      "weight": 2
+    },
+    "ymca",
+    "macarena",
+    {
+      "clip": "chicken-dance",
+      "weight": 2
+    },
+    {
+      "clip": "arm-wave",
+      "weight": 2
+    },
+    "rumba",
+    "shimmy",
+    {
+      "clip": "step-hip-hop",
+      "weight": 2
+    }
+  ],
+  "beatOverrides": {
+    "rumba": {
+      "beatSec": 0.5925,
+      "downbeatSec": 0.0575,
+      "loops": true
+    }
+  },
+  "difficulty": {
+    "funkorama": "easy",
+    "unlock-me": "easy",
+    "my-bebe": "normal",
+    "the-hills": "normal",
+    "afro-trap-fusion": "hard"
+  }
+}

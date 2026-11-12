@@ -1,0 +1,104 @@
+[
+  {
+    "id": "maltina-theme",
+    "title": "Maltina Theme Song",
+    "artist": "Maltina",
+    "file": "audio/maltina-theme.wav",
+    "bpm": 113,
+    "firstBeatSec": 0.16,
+    "durationSec": 45.664,
+    "beats": 84,
+    "sourceStartSec": 0,
+    "license": {
+      "source": "Maltina theme song, supplied by the client (Maltina) for the Maltina Dance All booth",
+      "license": "Client-supplied brand audio: for use in this booth only; not to be redistributed",
+      "attribution": "Maltina theme song (supplied by Maltina). Cut to a 46 s excerpt with fades.",
+      "placeholder": false
+    }
+  },
+  {
+    "id": "funkorama",
+    "title": "Funkorama",
+    "artist": "Kevin MacLeod",
+    "file": "audio/funkorama.wav",
+    "bpm": 101.01,
+    "firstBeatSec": 0.594,
+    "durationSec": 43.956,
+    "beats": 72,
+    "sourceStartSec": 9.533,
+    "license": {
+      "source": "Kevin MacLeod (incompetech.com), \"Funkorama\"",
+      "license": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/)",
+      "attribution": "\"Funkorama\" by Kevin MacLeod (incompetech.com), licensed under Creative Commons: By Attribution 4.0. Cut to a 44 s excerpt with fades.",
+      "placeholder": false
+    }
+  },
+  {
+    "id": "unlock-me",
+    "title": "Unlock Me",
+    "artist": "Kontraa Music",
+    "file": "audio/unlock-me.wav",
+    "bpm": 109.99,
+    "firstBeatSec": 0.5455,
+    "durationSec": 44.731,
+    "beats": 80,
+    "sourceStartSec": 105.872,
+    "license": {
+      "source": "\"Unlock Me\" by Kontraa Music, Pixabay (https://pixabay.com/music/upbeat-unlock-me-amapiano-music-149058/)",
+      "license": "Pixabay Content License (https://pixabay.com/service/license-summary/): free to use, no attribution required",
+      "attribution": "\"Unlock Me\" by Kontraa Music (Pixabay). Cut to a 45 s excerpt with fades.",
+      "placeholder": false
+    }
+  },
+  {
+    "id": "my-bebe",
+    "title": "My Bebe",
+    "artist": "artbybigvee",
+    "file": "audio/my-bebe.wav",
+    "bpm": 110,
+    "firstBeatSec": 0.5455,
+    "durationSec": 44.727,
+    "beats": 80,
+    "sourceStartSec": 42.621,
+    "license": {
+      "source": "\"My Bebe\" by artbybigvee, Pixabay (https://pixabay.com/music/afrobeat-my-bebe-183605/)",
+      "license": "Pixabay Content License (https://pixabay.com/service/license-summary/): free to use, no attribution required",
+      "attribution": "\"My Bebe\" by artbybigvee (Pixabay). Cut to a 45 s excerpt with fades.",
+      "placeholder": false
+    }
+  },
+  {
+    "id": "the-hills",
+    "title": "The Hills",
+    "artist": "artbybigvee",
+    "file": "audio/the-hills.wav",
+    "bpm": 103.99,
+    "firstBeatSec": 0.577,
+    "durationSec": 45.004,
+    "beats": 76,
+    "sourceStartSec": 86.599,
+    "license": {
+      "source": "\"The Hills\" by artbybigvee, Pixabay (https://pixabay.com/music/afrobeat-the-hills-153598/)",
+      "license": "Pixabay Content License (https://pixabay.com/service/license-summary/): free to use, no attribution required",
+      "attribution": "\"The Hills\" by artbybigvee (Pixabay). Cut to a 45 s excerpt with fades.",
+      "placeholder": false
+    }
+  },
+  {
+    "id": "afro-trap-fusion",
+    "title": "Afro Trap Fusion",
+    "artist": "CNA Beats",
+    "file": "audio/afro-trap-fusion.wav",
+    "bpm": 124.96,
+    "firstBeatSec": 0.4802,
+    "durationSec": 45.134,
+    "beats": 92,
+    "sourceStartSec": 49.52,
+    "license": {
+      "source": "\"Afro Trap Fusion\" by CNA Beats, Pixabay (https://pixabay.com/music/beats-afro-trap-fusion-cna-beats-112526/)",
+      "license": "Pixabay Content License (https://pixabay.com/service/license-summary/): free to use, no attribution required",
+      "attribution": "\"Afro Trap Fusion\" by CNA Beats (Pixabay). Cut to a 45 s excerpt with fades.",
+      "placeholder": false
+    }
+  }
+]
